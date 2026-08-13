@@ -1,0 +1,17 @@
+# Render 部署配置（免费版）
+# 用法：在 Render 控制台点 "New" -> "Blueprint" -> 连上你的 GitHub 仓库，
+#       Render 会自动读取这个文件并部署，无需手动填命令。
+services:
+  - type: web
+    name: lanyang-workbench
+    runtime: node
+    plan: free
+    region: singapore          # 新加坡节点，离国内近、访问快
+    branch: main
+    buildCommand: "npm install"   # 本项目零第三方依赖，这一步很快
+    startCommand: "node server.js"
+    healthCheckPath: "/"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # PORT 由 Render 自动注入，server.js 已支持，无需手动设置

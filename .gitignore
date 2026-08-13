@@ -1,0 +1,9 @@
+# 本地项目记忆（不上传）
+.workbuddy/
+# 运行时本地数据（云端备份在服务器上，不需要传）
+server-data/
+# 依赖（部署平台会自动安装）
+node_modules/
+# 系统/环境垃圾
+.DS_Store
+*.log

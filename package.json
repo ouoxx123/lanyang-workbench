@@ -1,0 +1,13 @@
+{
+  "name": "lanyangyang-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "懒羊羊主题个人综合工作台 · 端到端加密云端同步（纯 Node 内置模块，无第三方依赖）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

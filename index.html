@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>懒羊羊主题工作台</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-theme="cream">
+  <!-- 移动端顶部栏 -->
+  <div class="mobile-topbar" id="mobileTopbar">
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="mobile-title" id="mobileTitle">懒羊羊工作台</span>
+  </div>
+
+  <!-- 遮罩 -->
+  <div class="scrim" id="scrim"></div>
+
+  <!-- 侧边导航 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-sheep" id="brandSheep"></span>
+      <div class="brand-text">
+        <strong>懒羊羊</strong>
+        <small>综合工作台</small>
+      </div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">
+      <span class="sync-dot" id="syncDot" title="同步状态"></span>
+      <span id="syncLabel">本地优先</span>
+    </div>
+  </aside>
+
+  <!-- 主区域 -->
+  <main class="content" id="content">
+    <div class="view" id="view"></div>
+  </main>
+
+  <!-- 全局弹窗容器 -->
+  <div class="modal-root" id="modalRoot"></div>
+  <!-- 轻提示 -->
+  <div class="toast-root" id="toastRoot"></div>
+
+  <!-- 脚本：经典 script 加载，共享 window.App -->
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/crypto.js"></script>
+  <script src="assets/js/sync.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/modules/home.js"></script>
+  <script src="assets/js/modules/todo.js"></script>
+  <script src="assets/js/modules/inspiration.js"></script>
+  <script src="assets/js/modules/links.js"></script>
+  <script src="assets/js/modules/checkin.js"></script>
+  <script src="assets/js/modules/meal.js"></script>
+  <script src="assets/js/modules/memo.js"></script>
+  <script src="assets/js/modules/countdown.js"></script>
+  <script src="assets/js/modules/finance.js"></script>
+  <script src="assets/js/modules/settings.js"></script>
+</body>
+</html>
