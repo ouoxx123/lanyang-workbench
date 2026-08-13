@@ -12,8 +12,8 @@ COPY assets ./assets
 # 数据持久化目录：部署时请把卷挂到 /app/server-data
 RUN mkdir -p /app/server-data
 
-# 端口由环境变量 PORT 控制（默认 8787），绑定 0.0.0.0 供外部访问
-ENV PORT=8787
-EXPOSE 8787
+# 端口由环境变量 PORT 控制（HF Spaces 默认 7860），绑定 0.0.0.0 供外部访问
+ENV PORT=7860
+EXPOSE 7860
 
 CMD ["node", "server.js"]
